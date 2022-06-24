@@ -65,7 +65,7 @@ function onClick(e) {
         total = operate(operator, total, currentNum);
 
         clearDisplay();
-        addTextToDisplay(total.toString());
+        addTextToDisplay(total.toFixed(5).toString());
         resetVars();
     }
 }
