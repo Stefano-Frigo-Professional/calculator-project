@@ -12,25 +12,29 @@ body {
     gap: 10px;
 }
 
-.display {
+#display {
+    display:flex;
     border: 2px solid red;
     padding: 5px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
     width: 300px;
+    height:60px;
 }
 
 .button-container {
     display:flex;
     gap:30px;
     justify-content: center;
-    border: 2px solid red;
+    border: 2px solid darkblue;
     flex-wrap: wrap;
     width: 300px;
+    padding:5px;
 }
 
 .calc-button {
     width:70px;
     height:70px;
-    font-size: 20px;
-    flex: 1, 0, auto;
+    font-size: 30px;
 }
