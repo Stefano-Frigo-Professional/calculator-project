@@ -65,8 +65,14 @@ function onClick(e) {
         total = operate(operator, total, currentNum);
 
         clearDisplay();
-        addTextToDisplay(total.toFixed(5).toString());
+        addTextToDisplay(total.toFixed(5).replace(/\.?0*$/,'').toString());
         resetVars();
+    }
+
+    if(e.target.id == "clear-display"){
+        clearDisplay();
+        resetVars();
+        display.textContent = "0";
     }
 }
 
